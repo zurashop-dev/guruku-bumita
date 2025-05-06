@@ -1,116 +1,47 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Guruku - Terima Kasih Guruku</title>
+  <meta charset="UTF-8">
+  <title>Selamat Hari Guru</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
-
-    /* Reset and base */
-    html, body {
-      margin: 0; padding: 0;
-      height: 100%;
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
-      color: #3a2e39;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fceabb, #f8b500);
       text-align: center;
-      overflow: hidden;
-      padding: 15px;
-      box-sizing: border-box;
+      padding: 50px;
+      color: #333;
     }
-
-    .container {
-      background: rgba(255 255 255 / 0.95);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      border-radius: 18px;
-      width: 320px;
-      max-height: 580px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
     h1 {
-      font-family: 'Merriweather', serif;
-      font-size: 2.8rem;
-      margin-bottom: 0.25rem;
-      color: #5a264a;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      font-size: 3em;
+      color: #4b2e83;
     }
-
-    img.photo {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 16px;
-      margin: 15px 0;
-      box-shadow: 0 6px 15px rgba(90,38,74,0.35);
-      user-select: none;
+    .guru-img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin-top: 20px;
     }
-
-    p.message {
-      font-size: 1.1rem;
-      color: #4d3a4a;
-      line-height: 1.5;
-      margin: 15px 0 5px;
-      flex-grow: 1;
-    }
-
-    footer {
-      font-size: 0.85rem;
-      color: #825e81;
-      margin-top: 12px;
-      font-style: italic;
-    }
-
-    audio {
-      width: 100%;
-      border-radius: 8px;
-      outline: none;
-      margin-top: 12px;
-    }
-
-    /* Responsive scaling for smaller viewports */
-    @media (max-width: 380px) {
-      .container {
-        width: 95vw;
-      }
-
-      h1 {
-        font-size: 2.4rem;
-      }
-
-      img.photo {
-        width: 95vw;
-        height: auto;
-        max-height: 170px;
-      }
-
-      p.message {
-        font-size: 1rem;
-      }
+    .description {
+      font-size: 1.2em;
+      margin-top: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
-  <main role="main" class="container" aria-label="Guruku - Terima Kasih Bu Mita">
-    <h1>Guruku</h1>
-    <img class="photo" src="https://files.catbox.moe/yl802s.jpg" alt="Seorang guru sedang berfoto dengan muridnya" />
-    <p class="message">
-      Terima kasih Bu Mita atas segala ilmu, kesabaran,  
-      dan cinta yang kau berikan.  
-      Engkau adalah cahaya yang menerangi jalan hidupku dan inspirasiku selalu.
-    </p>
-    <audio controls autoplay loop muted>
-      <source src="https://files.catbox.moe/rprg8w.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-    <footer>&copy; 2025 - Persembahan untuk Bu Mita tercinta</footer>
-  </main>
+
+  <h1>Selamat Hari Guru</h1>
+  <img src="https://files.catbox.moe/yl802s.jpg" alt="Foto Guru" class="guru-img">
+  <div class="description">
+    Terima kasih atas segala dedikasi, ilmu, dan ketulusan hati yang telah diberikan. Guru adalah pelita dalam gelap, pahlawan tanpa tanda jasa. Selamat Hari Guru!
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/rprg8w.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+  </audio>
+
 </body>
 </html>
