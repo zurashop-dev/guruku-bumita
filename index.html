@@ -8,34 +8,56 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #fceabb, #f8b500);
       text-align: center;
-      padding: 50px;
+      padding: 30px;
       color: #333;
     }
     h1 {
       font-size: 3em;
       color: #4b2e83;
+      margin-bottom: 40px;
     }
-    .guru-img {
-      width: 300px;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      margin-top: 20px;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
     }
-    .description {
-      font-size: 1.2em;
-      margin-top: 30px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .card p {
+      margin-top: 15px;
+      font-size: 1em;
     }
   </style>
 </head>
 <body>
 
   <h1>Selamat Hari Guru</h1>
-  <img src="https://files.catbox.moe/yl802s.jpg" alt="Foto Guru" class="guru-img">
-  <div class="description">
-    Terima kasih atas segala dedikasi, ilmu, dan ketulusan hati yang telah diberikan. Guru adalah pelita dalam gelap, pahlawan tanpa tanda jasa. Selamat Hari Guru!
+
+  <div class="gallery">
+    <div class="card">
+      <img src="https://files.catbox.moe/yl802s.jpg" alt="Guru 1">
+      <p>Ibu Sari - Mengajar dengan kasih dan penuh semangat di setiap pelajaran.</p>
+    </div>
+    <div class="card">
+      <img src="https://files.catbox.moe/yl802s.jpg" alt="Guru 2">
+      <p>Pak Budi - Selalu menjadi inspirasi dalam dunia sains dan teknologi.</p>
+    </div>
+    <div class="card">
+      <img src="https://files.catbox.moe/yl802s.jpg" alt="Guru 3">
+      <p>Ibu Lina - Membentuk karakter siswa dengan kesabaran dan ketulusan.</p>
+    </div>
+    <!-- Tambah lebih banyak .card sesuai kebutuhan -->
   </div>
 
   <audio autoplay loop>
